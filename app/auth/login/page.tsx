@@ -174,13 +174,15 @@ export default function LoginPage() {
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-4 text-center">
           <div className="flex justify-center">
-            <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
-              <Recycle className="w-7 h-7 text-primary-foreground" />
-            </div>
+            <img 
+              src="/a2.png" 
+              alt="Arvi Logo" 
+              className="w-12 h-12 rounded-xl"
+            />
           </div>
           <div>
             <CardTitle className="text-2xl font-bold">Welcome Back</CardTitle>
-            <CardDescription className="text-base">Sign in to your EcoVolunteer PRO account</CardDescription>
+            <CardDescription className="text-base">Sign in to your Arvi account</CardDescription>
           </div>
         </CardHeader>
         <CardContent>

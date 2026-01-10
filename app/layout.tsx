@@ -13,7 +13,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "EcoVolunteer PRO - Join Environmental Cleanup Events",
+  title: "Arvi - Join Environmental Cleanup Events",
   description:
     "Connect with environmental cleanup events, track your impact, and make a difference. Join our community of eco-warriors today.",
   generator: "v0.app",
