@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Separator } from "@/components/ui/separator"
-import { Calendar, MapPin, Clock, Users, Share2, CheckCircle2, Loader2 } from "lucide-react"
+import { Calendar, MapPin, Clock, Users, Share2, CheckCircle2, Loader2, Edit } from "lucide-react"
 import { format } from "date-fns"
 import { createClient } from "@/lib/supabase/client"
 import { useToast } from "@/hooks/use-toast"
@@ -17,9 +17,10 @@ interface EventDetailsProps {
   participants: any[]
   userRegistration: any
   user: any
+  isOrganizer?: boolean
 }
 
-export function EventDetails({ event, participants, userRegistration, user }: EventDetailsProps) {
+export function EventDetails({ event, participants, userRegistration, user, isOrganizer = false }: EventDetailsProps) {
   const router = useRouter()
   const { toast } = useToast()
   const [loading, setLoading] = useState(false)
@@ -116,9 +117,17 @@ export function EventDetails({ event, participants, userRegistration, user }: Ev
                     <Badge className={getCategoryColor(event.category)}>{event.category.replace("-", " ")}</Badge>
                     <h1 className="text-4xl font-bold">{event.title}</h1>
                   </div>
-                  <Button variant="outline" size="icon" onClick={handleShare} className="bg-transparent">
-                    <Share2 className="w-4 h-4" />
-                  </Button>
+                  <div className="flex items-center gap-2">
+                    {isOrganizer && (
+                      <Button variant="outline" size="sm" onClick={() => router.push(`/dashboard/events/${event.id}/edit`)} className="bg-transparent">
+                        <Edit className="w-4 h-4" />
+                        Edit Event
+                      </Button>
+                    )}
+                    <Button variant="outline" size="icon" onClick={handleShare} className="bg-transparent">
+                      <Share2 className="w-4 h-4" />
+                    </Button>
+                  </div>
                 </div>
 
                 {/* Key details */}

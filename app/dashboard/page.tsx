@@ -3,6 +3,7 @@ import { createClient } from "@/lib/supabase/server"
 import { DashboardNav } from "@/components/dashboard-nav"
 import { DashboardStats } from "@/components/dashboard-stats"
 import { UpcomingEvents } from "@/components/upcoming-events"
+import { CompletedEvents } from "@/components/completed-events"
 import { RecentImpact } from "@/components/recent-impact"
 import { AchievementShowcase } from "@/components/achievement-showcase"
 
@@ -84,6 +85,7 @@ export default async function DashboardPage() {
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
             <UpcomingEvents userId={user.id} />
+            <CompletedEvents userId={user.id} />
             <RecentImpact userId={user.id} />
           </div>
           <div>

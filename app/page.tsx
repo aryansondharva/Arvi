@@ -22,11 +22,13 @@ export default function HomePage() {
       <nav className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <Recycle className="w-5 h-5 text-primary-foreground" />
-            </div>
+            <img 
+              src="/a2.png" 
+              alt="Arvi Logo" 
+              className="w-8 h-8 rounded-lg"
+            />
             <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              EcoVolunteer PRO
+              Arvi
             </span>
           </div>
           <div className="hidden md:flex items-center gap-6">
@@ -44,6 +46,11 @@ export default function HomePage() {
             <Link href="/auth/login">
               <Button variant="ghost" size="sm">
                 Sign In
+              </Button>
+            </Link>
+            <Link href="/server/simple">
+              <Button variant="default" size="sm" className="bg-green-600 hover:bg-green-700">
+                Server Login
               </Button>
             </Link>
             <Link href="/auth/signup">
@@ -283,10 +290,12 @@ export default function HomePage() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                  <Recycle className="w-5 h-5 text-primary-foreground" />
-                </div>
-                <span className="text-lg font-bold">EcoVolunteer PRO</span>
+                <img 
+                  src="/a2.png" 
+                  alt="Arvi Logo" 
+                  className="w-8 h-8 rounded-lg"
+                />
+                <span className="text-lg font-bold">Arvi</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Making environmental action accessible to everyone, everywhere.
@@ -364,7 +373,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-            © 2025 EcoVolunteer PRO. All rights reserved. Built with 💚 for the planet.
+            © 2025 Arvi. All rights reserved. Built with 💚 for planet.
           </div>
         </div>
       </footer>
