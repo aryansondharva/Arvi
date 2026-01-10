@@ -1,3 +1,90 @@
+# 🌍 Arvi
+
+> **Connect. Clean. Conquer.** A comprehensive platform connecting environmental volunteers with cleanup events, featuring AI-powered analytics, interactive maps, and gamified achievements.
+
+---
+
+## ✨ Key Features
+
+### 🚀 Core Functionality
+- **🔐 Secure Authentication**: Multi-method login (Email/Password, Magic Link, Google OAuth)
+- **📅 Event Management**: Create, browse, and register for environmental cleanup events
+- **🗺️ Interactive Maps**: Real-time event visualization with location-based filtering
+- **📊 Impact Tracking**: Log and visualize environmental contributions (waste, trees, area)
+- **🤖 AI-Powered Analytics**: Personalized insights and smart recommendations
+- **🏆 Global Leaderboard**: Compete with volunteers worldwide
+- **🎯 Achievement System**: Unlock badges and milestones as you progress
+- **👤 User Profiles**: Track your environmental journey and showcase impact
+
+### 🌱 Event Categories
+| Category | Description |
+|----------|-------------|
+| 🏖️ Beach Cleanup | Coastal and marine debris removal |
+| 🌲 Forest Restoration | Tree planting and forest conservation |
+| 🌊 River Cleanup | Waterway purification and maintenance |
+| 🏞️ Park Maintenance | Public space beautification |
+| 🦌 Wildlife Conservation | Habitat protection and preservation |
+| ⚡ Custom Events | Community-specific environmental initiatives |
+
+---
+
+## 🛠️ Technology Stack
+
+| Component | Technology | Version |
+|-----------|------------|---------|
+| **Frontend** | Next.js | 16 |
+| **UI Library** | React | 19 |
+| **Language** | TypeScript | Latest |
+| **Styling** | Tailwind CSS | v4 |
+| **Components** | shadcn/ui | Latest |
+| **Database** | Supabase (PostgreSQL) | Latest |
+| **Authentication** | Supabase Auth + Google OAuth | Latest |
+| **AI Services** | Vercel AI SDK + OpenAI | Latest |
+| **Charts** | Recharts | Latest |
+| **Icons** | Lucide React | Latest |
+
+---
+
+## 🚀 Quick Start
+
+### 📋 Prerequisites
+- **Node.js** 18+ installed
+- **Supabase** account (pre-configured)
+- **Google Cloud Console** (optional, for OAuth)
+
+### 🔐 Getting Started - Create Your Account
+
+> **⚠️ Important**: No default test credentials exist. You must create your own account.
+
+#### Authentication Options
+
+| Method | Setup Required | Best For |
+|--------|----------------|----------|
+| **📧 Email/Password** | ❌ None | Quick start |
+| **🔗 Magic Link (OTP)** | ❌ None | Passwordless convenience |
+| **🔵 Google OAuth** | ✅ Configuration | One-click access |
+
+---
+
+### 📧 Option 1: Email/Password (Traditional)
+
+**Sign Up:**
+1. Navigate to `/auth/signup`
+2. Enter your full name and email
+3. Create a password (min. 6 characters)
+4. Click "Create Account"
+
+**✅ Automatic Setup:**
+- Profile creation in `profiles` table
+- Leaderboard initialization
+- Dashboard redirect
+
+**Sign In:** Visit `/auth/login` with your credentials
+
+---
+
+=======
+
 # 🌍 EcoVolunteer PRO
 
 > **Connect. Clean. Conquer.** A comprehensive platform connecting environmental volunteers with cleanup events, featuring AI-powered analytics, interactive maps, and gamified achievements.
@@ -83,6 +170,7 @@
 
 ---
 
+>>>>>>> aea4f08036e154434cbcc166806869882768953a
 ### 🔗 Option 2: Magic Link/OTP (Recommended)
 
 **Passwordless sign-in in 3 steps:**
@@ -427,4 +515,8 @@ Built with ❤️ using **v0 by Vercel**
 
 ---
 
+<<<<<<< HEAD
 > **🌍 Join the movement**: Connect with environmental volunteers worldwide and make a tangible impact on our planet's future.
+=======
+> **🌍 Join the movement**: Connect with environmental volunteers worldwide and make a tangible impact on our planet's future.
+>>>>>>> aea4f08036e154434cbcc166806869882768953a
