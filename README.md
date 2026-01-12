@@ -509,12 +509,6 @@ Climb the leaderboard and unlock achievement badges
 
 ## 📄 License
 
-Built with ❤️ using **v0 by Vercel**
+Built with ❤️ using **ARYAN SONDHARVA**
 
 ---
-
-<<<<<<< HEAD
-> **🌍 Join the movement**: Connect with environmental volunteers worldwide and make a tangible impact on our planet's future.
-=======
-> **🌍 Join the movement**: Connect with environmental volunteers worldwide and make a tangible impact on our planet's future.
->>>>>>> aea4f08036e154434cbcc166806869882768953a
