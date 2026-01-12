@@ -169,8 +169,6 @@
 **Sign In:** Visit `/auth/login` with your credentials
 
 ---
-
->>>>>>> aea4f08036e154434cbcc166806869882768953a
 ### 🔗 Option 2: Magic Link/OTP (Recommended)
 
 **Passwordless sign-in in 3 steps:**
